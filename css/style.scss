@@ -1,0 +1,143 @@
+@import 'variables';
+
+// ----------------------------------------------------
+//  General
+// ----------------------------------------------------
+
+* {
+    font-family: $font-title;
+}
+
+p {
+    font-size: 14px;
+    line-height: 1.75;
+    color: rgba($color-n-10, 0.9);
+    margin-top: 1.5rem;
+}
+
+main {
+    section {
+        margin-top: 100px;
+    }
+
+    .row {
+        padding-top: 1.5rem;
+        padding-bottom: 1.5rem;
+        border-bottom: 1px solid $color-n-5;
+    }
+}
+
+// ----------------------------------------------------
+//  Primary Style
+// ----------------------------------------------------
+
+.primary {
+
+    // Style 01
+    &.style-1 {
+        text-align: center;
+    
+        .num,
+        .title {
+            color: $color-synctify;
+        }
+    
+        .num {
+            display: inline-block;
+            font-size: 48px;
+            font-weight: 700;
+            line-height: 1;
+            padding-bottom: 6px;
+            border-bottom: 1px solid $color-n-5;
+            margin-bottom: 24px;
+        }
+    
+        .title {
+            font-size: 16px;
+            font-weight: 600;
+        }
+    }
+
+    // Style 02
+    &.style-2 {
+        text-align: center;
+
+        .num {
+            display: inline-block;
+            font-size: 22px;
+            font-weight: bold;
+            color: $color-n-1;
+            border-radius: 2px;
+            background-color: $color-synctify;
+            padding: 4px 16px;
+            margin-bottom: 12px;
+        }
+    
+        .title {
+            font-size: 18px;
+            font-weight: bold;
+            color: $color-synctify;
+            padding-bottom: 6px;
+            border-bottom: 1px solid $color-synctify;
+        }
+    }
+}
+
+// ----------------------------------------------------
+//  Secondary Style
+// ----------------------------------------------------
+
+.secondary {
+
+    // Style 01
+    &.style-1 {
+
+        .num,
+        .title {
+            color: $color-synctify;
+        }
+    
+        .num {
+            font-size: 22px;
+            color: $color-n-1;
+            border-radius: 2px;
+            background-color: $color-synctify;
+            padding: 8px;
+            margin-right: 12px;
+        }
+    
+        .title {
+            font-size: 18px;
+            font-weight: bold;
+        }
+    }
+
+    // Style 02
+    &.style-2 {
+
+        hr {
+            margin-top: 0;
+            background-color: $color-n-5;
+            opacity: 1;
+        }
+
+        .num,
+        .title {
+            color: $color-synctify;
+            line-height: 1;
+        }
+
+        .num {
+            font-size: 48px;
+            font-weight: bold;
+            font-style: italic;
+            margin-right: 12px;
+        }
+
+        .title {
+            font-size: 14px;
+            font-weight: bold;
+            text-align: right;
+        }
+    }
+}
